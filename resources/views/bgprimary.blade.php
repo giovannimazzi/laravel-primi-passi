@@ -49,7 +49,7 @@
     ></script>
 
   </head>
-  <body class="bg-secondary">
+  <body class="{{ $bg }}">
     <nav class="navbar navbar-dark navbar-expand-lg bg-black bg-gradient">
       <div class="container-fluid">
         <a class="navbar-brand text-light" href="/">
@@ -61,12 +61,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}">
+                    <a class="nav-link" aria-current="page" href="{{ route('home') }}">
                         Home
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('bgprimary') }}">BG-Primary</a>
+                    <a class="nav-link active" href="{{ route('bgprimary') }}">BG-Primary</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('bgsuccess') }}">BG-Success</a>
@@ -76,7 +76,7 @@
       </div>
     </nav>
     <div class="container mt-5">
-      <h1>HELLO WORLD! <small><small>by {{ $name }}</small></small></h1>
+      <h1>HELLO WORLD!</h1>
     </div>
   </body>
 </html>
