@@ -49,7 +49,7 @@
       </div>
     </nav>
     <div class="container mt-5">
-      <h1>HELLO WORLD!</h1>
+      <h1>HELLO WORLD! <small><small>by {{ $name }}</small></small></h1>
     </div>
   </body>
 </html>
